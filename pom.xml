@@ -101,9 +101,9 @@
     <maven-release-plugin.version>2.5.3</maven-release-plugin.version>
     <maven-site-plugin.version>3.7.1</maven-site-plugin.version>
     <maven-dependency-plugin.version>3.1.0</maven-dependency-plugin.version>
-    <build-helper-maven-plugin.version>3.0.0</build-helper-maven-plugin.version>
+    <build-helper-maven-plugin.version>3.1.0-SNAPSHOT</build-helper-maven-plugin.version>
     <requirejs-maven-plugin.version>2.0.4</requirejs-maven-plugin.version>
-    <frontend-maven-plugin.version>1.6</frontend-maven-plugin.version>
+    <frontend-maven-plugin.version>1.8.0</frontend-maven-plugin.version>
     <maven-antrun-plugin.version>1.8</maven-antrun-plugin.version>
     <iterator-maven-plugin.version>0.5.1</iterator-maven-plugin.version>
     <maven-assembly-plugin.version>3.1.1</maven-assembly-plugin.version>
@@ -1176,7 +1176,7 @@
           </dependencies>
         </plugin>
         <plugin>
-          <groupId>org.codehaus.mojo</groupId>
+          <groupId>org.pentaho</groupId>
           <artifactId>build-helper-maven-plugin</artifactId>
           <version>${build-helper-maven-plugin.version}</version>
         </plugin>
@@ -1235,7 +1235,7 @@
         <artifactId>maven-release-plugin</artifactId>
       </plugin>
       <plugin>
-        <groupId>org.codehaus.mojo</groupId>
+        <groupId>org.pentaho</groupId>
         <artifactId>build-helper-maven-plugin</artifactId>
         <executions>
           <execution>
@@ -1251,6 +1251,7 @@
             </goals>
             <configuration>
               <rootLocationProperty>project.rootdir</rootLocationProperty>
+              <useHighestBasedir>true</useHighestBasedir>
             </configuration>
           </execution>
         </executions>
@@ -1301,7 +1302,7 @@
       <build>
         <plugins>
           <plugin>
-            <groupId>org.codehaus.mojo</groupId>
+            <groupId>org.pentaho</groupId>
             <artifactId>build-helper-maven-plugin</artifactId>
             <executions>
               <execution>
@@ -1903,7 +1904,7 @@
             </executions>
           </plugin>
           <plugin>
-            <groupId>org.codehaus.mojo</groupId>
+            <groupId>org.pentaho</groupId>
             <artifactId>build-helper-maven-plugin</artifactId>
             <executions>
               <execution>
